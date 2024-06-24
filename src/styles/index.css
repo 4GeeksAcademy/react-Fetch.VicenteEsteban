@@ -1,12 +1,34 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+ul li {
+    border: 1px solid rgb(0, 141, 0);
+    list-style: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(245, 188, 1, 0.61);
+  }
+  input{
+    width: 100%;
+  }
+  .icono{
+    float: right;
+    color: rgb(0, 0, 0);
+  }
+  .input {
+    background-color: #13b904b2;
+  }
+  .input:focus {
+    color: rgb(0, 0, 0);
+    background-color: rgba(245, 188, 1, 0.541);
+    outline-color: rgb(245, 188, 1);
+    box-shadow: -3px -3px 15px rgb(245, 188, 1);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+.input::placeholder{
+  color: rgb(0, 0, 0);
+}
+body{
+  margin-top: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/pasillo-2575037.jpg");
+}
