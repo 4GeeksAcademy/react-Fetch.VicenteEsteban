@@ -97,7 +97,11 @@ const Home = () => {
         }
       );
       console.log(response);
-      if (response.ok) setTodos(todos.filter((item, index) => item.id != id));
+      if (response.ok)
+        setState((prevState) => {
+          return prevState.filter((item, index) => item.id != id);
+        });
+      // setTodos(todos.filter((item, index) => item.id != id));
     } catch (error) {
       console.log(error);
     }
